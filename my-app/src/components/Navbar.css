@@ -1,0 +1,49 @@
+nav {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 5rem;
+    height: 6.725rem;
+}
+
+.menu__link {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+.menu__link--free {
+    font-size: 1rem;
+    margin-right: 2rem;
+}
+
+.menu__link img {
+    height: 1.35rem;
+    width: auto;
+}
+
+.menu__link a {
+    text-decoration: none;
+    margin-left: 0.5rem;
+    color: #9393a0;
+}
+
+.menu__link:hover {
+    border-bottom: 0.25rem solid #0087ca;
+}
+
+.menu__link:hover a {
+    color: #0087ca; 
+}
+
+.menu__link:hover img {
+    filter: invert(.5) sepia(1) saturate(3) hue-rotate(160deg);
+}
