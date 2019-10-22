@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Link = ({ name, icon, url, classname }) => {
+const Link = ({ name, icon, url, className }) => {
     return (
-        <li class={classname ? `menu__link ${classname}` : 'menu__link'}>
+        <li class={className ? `menu__link ${className}` : 'menu__link'}>
             {icon && <img src={icon} alt="" />}
             <a href={url} target="_blank" rel="noopener noreferrer">
                 {name}

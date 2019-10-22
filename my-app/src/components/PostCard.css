@@ -1,0 +1,42 @@
+.post-card {
+    display: grid;
+    grid-template-columns: 28.6% auto;
+    margin: 5rem 5rem -2.2rem 5rem;
+}
+
+.post-card:last-of-type {
+    margin-bottom: 5rem;
+}
+
+.post-card__cover {
+    width: 100%;
+    height: auto;
+}
+
+.post-card__copy {
+    text-align: left;
+    background-color: #ffffff;
+    margin-top: 3.3rem;
+    padding: 3rem 4rem 3rem 7.8rem;
+    font-size: 1.15rem;
+}
+
+.post-card__link {
+    display: grid;
+    place-items: center;
+    width: fit-content;
+    font-size: 0.875rem;
+    margin-top: 4.2rem;
+}
+
+.post-card__link:hover {
+    border: none;
+}
+
+.post-card__link img {
+    height: 2.75rem;
+}
+
+.post-card__link a {
+    color: #3ca7d8;
+}

@@ -10,7 +10,7 @@ const Navbar = ({ links }) => {
                     return <Link name={name} url={url} icon={icon}/>
                 })}
             </ul>
-            <Link classname="menu__link--free" name="Materiais gratuitos 😄" url="#free"/>
+            <Link className="menu__link--free" name="Materiais gratuitos 😄" url="#free"/>
         </nav>
     )
 };

@@ -2,7 +2,6 @@ import book from '../assets/book.svg';
 import chart from '../assets/chart.svg';
 import gear from '../assets/gear.svg';
 import play from '../assets/play.svg';
-import plus from '../assets/plus.svg';
 import stack from '../assets/stack.svg';
 
 export const navbarLinks = [
