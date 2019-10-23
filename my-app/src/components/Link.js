@@ -1,7 +1,7 @@
 import React from 'react';
 
 const getType = type => {
-    return type[type.lenght -1] === 'a' ?  `Saiba mais sobre a ${type}` : `Saiba mais sobre o ${type}`;
+    return type[type.length - 1] === 'a' ?  `Saiba mais sobre a ${type}` : `Saiba mais sobre o ${type}`;
 }
 
 const Link = ({ name, type, icon, url, className }) => {
