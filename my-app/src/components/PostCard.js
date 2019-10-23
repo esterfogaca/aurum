@@ -9,7 +9,7 @@ const PostCard = ({
     title = 'Lorem Ipsum', 
     excerpt = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut cursus leo. In hac habitasse platea dictumst. Aliquam erat volutpat. Morbi porttitor, mauris et feugiat posuere, ante ligula auctor quam, ac commodo mauris risus vitae ante.`, 
     url = '#', 
-    linkName = 'Saiba mais sobre o Lorem Ipsum'
+    type = 'Lorem Ipsum'
 }) => {
     return (
         <article className="post-card">
@@ -17,7 +17,7 @@ const PostCard = ({
             <div className="post-card__copy">
                 <h2 className="post-card__title">{title}</h2>
                 <p className="post-card__excerpt">{excerpt}</p>
-                <Link className="post-card__link" url={url} name={linkName} icon={plus} />
+                <Link className="post-card__link" url={url} type={type} icon={plus} />
             </div>
         </article>
     )

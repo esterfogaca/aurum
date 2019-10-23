@@ -1,11 +1,15 @@
 import React from 'react';
 
-const Link = ({ name, icon, url, className }) => {
+const getType = type => {
+    return type[type.lenght -1] === 'a' ?  `Saiba mais sobre a ${type}` : `Saiba mais sobre o ${type}`;
+}
+
+const Link = ({ name, type, icon, url, className }) => {
     return (
-        <li class={className ? `menu__link ${className}` : 'menu__link'}>
+        <li className={className ? `menu__link ${className}` : 'menu__link'}>
             {icon && <img src={icon} alt="" />}
             <a href={url} target="_blank" rel="noopener noreferrer">
-                {name}
+                {name ? name : getType(type)}
             </a>
         </li>
     )
